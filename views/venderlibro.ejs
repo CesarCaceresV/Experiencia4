@@ -1,0 +1,51 @@
+<div class="contailer">
+    <form method="">
+        <div class="row justify-content-md-center">
+            <div class="col-6">
+              <b>Nombre del libro</b>
+                <input class="form-control" name="nombrelibro" type="text" placeholder="nombre del libro">
+                </br>
+                <b>cantidad</b> 
+                <input class="form-control col-4" type="number" name="cantidadlibro">
+                </br>
+                <div class="form-group">
+                  <b>version</b></br>
+                  <input  type="radio" name="version" value="librolujo"> Lujo </br>
+                  <input  type="radio" name="version" value="librobolsillo"> bolsillo </br>
+                </div>
+                </br>
+                <div class="form-group">
+                  <b>retiro</b> </br>
+                  <input type="radio" name="retiro" id="retirolocal" value="local" > retiro a local </br>
+                  <input type="radio" name="retiro" id="retirodespacho" value="despacho"> retiro a domicilio </br>
+                </div> 
+                </br>
+                <div class="form-group collapse" id="caso-local">
+                  <b>Nombre</b> <br>
+                  <input class="form-control" type="text" name="nombreCliente" placeholder="tu nombre">
+                  <br>
+                  <b>Telefono</b> <br>
+                  <input class="form-control" type="number" name="telefonoCliente" placeholder="tu numero de telefono o movil">
+                  <br>
+                </div>
+                <div class="form-group collapse" id="caso-despacho">
+                <b>Informacion de despacho</b><br>
+                  <textarea class="form-control" rows="5" placeholder="escribe tu informacion de despacho" name="casoDespacho"> 
+                  </textarea> 
+                </div>
+            </div>
+        </div>
+
+        <div class="text-right">
+            <button type="reset" class="btn btn-success">
+                Resetear formulario
+                <i class="glyphicon glyphicon-menu-right"></i>
+              </button>
+          <button type="submit" class="btn btn-success">
+            Enviar
+            <i class="glyphicon glyphicon-menu-right"></i>
+          </button>
+        </div>
+    </form>
+
+</div>

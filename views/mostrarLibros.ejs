@@ -1,0 +1,26 @@
+<div class="contailer">
+        <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Libro</th>
+                    <th>Ediciones de Lujo</th>
+                    <th>Ediciones de Bolsillo</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <% for(var i=0; i<listalibros.length; i++) { %>
+                        <tr>
+                            <td>
+                                <%=listalibros[i].nombrelibro%>
+                            </td>
+                            <td>
+                                <%=listalibros[i].cantidadlibrolujo%>
+                            </td>
+                            <td>
+                                <%=listalibros[i].cantidadlibrobolsillo%>
+                            </td>
+                        </tr>    
+                    <% } %>
+                </tbody>
+              </table>        
+</div>

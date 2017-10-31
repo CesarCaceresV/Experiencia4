@@ -1,0 +1,39 @@
+<div class="contailer">
+        <form method="Post" action="/Libro/Agregar">
+            <div class="row justify-content-md-center">
+                <div class="col-6">
+                  <b>Nombre del libro</b>
+                    <input class="form-control" name="nombrelibro" type="text" placeholder="nombre del libro">
+                    </br>
+                    <b>cantidad</b> 
+                    <input class="form-control col-4" type="number" name="cantidadlibrolujo" id="cantidad">
+                    </br>
+                    <div class="form-group">
+                      <b>version</b></br>
+                      <input  type="radio" name="version" value="librolujo" class="rg" id="lujo" checked="checked"> Lujo </br>
+                      <input  type="radio" name="version" value="librobolsillo" class="rg" id="bolsillo"> bolsillo </br>
+                    </div>
+                    <script type="text/javascript">
+                        $(".rg").change(function () {
+                            if ($("#lujo").attr("checked")) {
+                                $("#cantidad").attr("name","cantidadlibrolujo");
+                            }else {
+                                $("#cantidad").attr("name","cantidadlibrobolsillo");
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="text-right">
+                <button type="reset" class="btn btn-success">
+                    Resetear formulario
+                    <i class="glyphicon glyphicon-menu-right"></i>
+                  </button>
+              <button type="submit" class="btn btn-success">
+                Enviar
+                <i class="glyphicon glyphicon-menu-right"></i>
+              </button>
+            </div>
+        </form>
+    
+    </div>
